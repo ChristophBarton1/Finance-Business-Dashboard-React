@@ -23,7 +23,7 @@ It is built as a **React single-page app** with animated page transitions, a col
 consistent dark UI, plus a small **Express mock API** that generates realistic sample data. All data
 in the project is synthetic; it is a UI and data-visualisation showcase rather than a connected product.
 
-## ✨ Features
+## Features
 
 - **Executive dashboard**: KPI cards for revenue, customers, conversion rate and market share, plus revenue trend, actual-vs-forecast, sales-by-category and customer-acquisition charts.
 - **Advanced analytics**: time-series analysis, segment distribution, correlation analysis and a detailed metrics view.
@@ -34,7 +34,7 @@ in the project is synthetic; it is a UI and data-visualisation showcase rather t
 - **Mock data API**: Express endpoints that generate KPIs, regional/product sales, customers and a time series with a trend-plus-seasonality forecast.
 - **Work in progress**: an *Insights* engine page and a *Banking* page with a simulated bank / crypto-exchange connection flow exist in `src/pages` but are not yet wired into the router.
 
-## 🧱 Tech stack
+## Tech stack
 
 | Area | Choice |
 | --- | --- |
@@ -44,7 +44,7 @@ in the project is synthetic; it is a UI and data-visualisation showcase rather t
 | HTTP client | Axios |
 | Backend (mock) | Node.js, Express, Faker, Moment, CORS |
 
-## 🏗️ How it works
+## How it works
 
 ```mermaid
 flowchart LR
@@ -62,7 +62,7 @@ flowchart LR
 The pages currently render with local sample data; `client/src/utils/api.js` provides an Axios client
 for the Express endpoints (including a static fallback) so the views can be switched to the API.
 
-## 🚀 Getting started
+## Getting started
 
 **Prerequisites:** Node.js 18+ and npm.
 
@@ -92,7 +92,7 @@ Sign in with one of the sample accounts defined in `client/src/contexts/AuthCont
 | `GET` | `/api/timeseries?days=180&forecast=90` | Historical series plus forecast with confidence bounds |
 | `GET` | `/api/reports/sales` | Sales by region/product and top customers |
 
-## 📁 Project structure
+## Project structure
 
 ```
 backend/
